@@ -23,7 +23,7 @@ public class TotalAmount extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.total_amount);
-    txt= findViewById(R.id.textView3);
+    txt= findViewById(R.id.textView);
 
     btn=findViewById(R.id.button);
 
@@ -38,12 +38,13 @@ public class TotalAmount extends AppCompatActivity {
             }
         String s=String.valueOf(total);
         txt.setText(s);
-        final Intent totali=new Intent(this,CurrentLocation.class);
+        final Intent totali=new Intent(this,MapLocationActivity.class);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            startActivity(totali);
+
+                startActivity(totali);
             }
         });
 

@@ -28,6 +28,15 @@
         <activity android:name=".Capsicum"/>
         <activity android:name=".TotalAmount"/>
         <activity android:name=".CurrentLocation"/>
+        <activity android:name=".Rusk"/>
+        <activity android:name=".Bread"/>
+        <activity android:name=".Mutton"/>
+        <activity android:name=".Chicken"/>
+        <activity android:name=".Customer"/>
+        <activity android:name=".MapLocationActivity"/>
+
+
+
     </application>
 
 </manifest>

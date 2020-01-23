@@ -17,33 +17,24 @@ public class Apple extends Fruits {
     String apple;
     Integer price;
     Integer calculatedprice;
-    int quantity;
-    String quan;
-    EditText txt;
-    TextView txte;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.apple);
-        txt=(EditText) findViewById(R.id.editText3);
-        quan=txt.getText().toString();
-        txte= findViewById(R.id.textView4);
-        txte.setText(quan);
-        //String q=txt.getText().toString();
-        //quantity=Integer.parseInt(quan);
-        //int quantity=Integer.parseInt(quan);
+
 
         apple="Apple";
         price=80;
-        calculatedprice =price * 3;
+        //calculatedprice =price * 3;
 
         dbhelper=new CartDataBase(this);
         buy=findViewById(R.id.buyapple);
         buy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dbhelper.insertitem(apple,price,calculatedprice);
+                dbhelper.insertitem(apple,price,price);
             }
         });
     }

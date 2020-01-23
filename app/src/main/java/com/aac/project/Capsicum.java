@@ -27,13 +27,13 @@ public class Capsicum extends Vegetable{
 
             capsicum="Capsicum";
             price=60;
-            calculatedprice =price * 5;
+           // calculatedprice =price * 5;
             dbhelper=new CartDataBase(this);
             buy=findViewById(R.id.buyapple);
             buy.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    dbhelper.insertitem(capsicum,price,calculatedprice);
+                    dbhelper.insertitem(capsicum,price,price);
                 }
             });
         }

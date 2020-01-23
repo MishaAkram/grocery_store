@@ -7,34 +7,61 @@
     android:background="@drawable/wooden"
     tools:context=".TotalAmount">
 
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="163dp"
-        android:text="Total Amount"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="21dp"
+        android:text="SHOP NOW"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FF5722"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView3"
+
+    <EditText
+        android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="2dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:fontFamily="casual"
+        android:text="vh"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FF5722"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="303dp"
-        android:layout_marginBottom="199dp"
-        android:text="Button"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="267dp"
+        android:text="Location"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

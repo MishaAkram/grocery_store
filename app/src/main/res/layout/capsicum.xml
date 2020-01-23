@@ -1,67 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/wooden">
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="292dp"
-        android:layout_height="232dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginBottom="135dp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/capsicum" />
+    android:background="@drawable/wooden"
+    tools:context=".Apple">
+
 
     <Button
         android:id="@+id/buyapple"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="133dp"
+        android:layout_width="154dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="176dp"
+        android:background="@drawable/image"
+        android:backgroundTint="#FFC107"
+        android:foregroundTint="#FF9800"
         android:text="Buy"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:text="1 kg"
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="305dp"
+        android:layout_height="104dp"
+        android:text="You can buy:1kg at a time if you want to select more press button multiple times"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="165dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="116dp"
+
+        android:background="@drawable/image"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.583" />
+        app:srcCompat="@drawable/capsicum" />
 
-    <CheckBox
-        android:id="@+id/checkBox2"
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
-        android:text="5 kg"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox3"
-        app:layout_constraintStart_toStartOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:layout_marginTop="268dp"
+        android:layout_marginBottom="5dp"
+        android:text="Capsicum"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FF5722"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
-        android:text="10 kg"
-        app:layout_constraintBottom_toTopOf="@+id/buyapple"
-        app:layout_constraintStart_toStartOf="@+id/checkBox2"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

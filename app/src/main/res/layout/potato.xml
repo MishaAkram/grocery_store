@@ -1,71 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wooden">
+    android:background="@drawable/wooden"
+    tools:context=".Apple">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.633"
-            tools:layout_editor_absoluteX="182dp" />
+    <Button
+        android:id="@+id/buyapple"
+        android:layout_width="154dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="176dp"
+        android:background="@drawable/image"
+        android:backgroundTint="#FFC107"
+        android:foregroundTint="#FF9800"
+        android:text="Buy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="182dp"
-            android:layout_height="286dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/potato"
-            tools:layout_editor_absoluteY="26dp" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="305dp"
+        android:layout_height="104dp"
+        android:text="You can buy:1kg at a time if you want to select more press button multiple times"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <CheckBox
-            android:id="@+id/checkBox4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CheckBox"
-            tools:layout_editor_absoluteX="174dp"
-            tools:layout_editor_absoluteY="510dp" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="165dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="116dp"
 
-        <CheckBox
-            android:id="@+id/checkBox5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CheckBox"
-            tools:layout_editor_absoluteX="178dp"
-            tools:layout_editor_absoluteY="555dp" />
+        android:background="@drawable/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/potato" />
 
-        <CheckBox
-            android:id="@+id/checkBox6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CheckBox"
-            tools:layout_editor_absoluteX="180dp"
-            tools:layout_editor_absoluteY="607dp" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:layout_marginBottom="5dp"
+        android:text="Potato"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FF5722"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,7 +20,6 @@ public class Items extends MainActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.items);
-      //  dbhelper=new ItemDataBase(this);
         ItemsList adapter = new ItemsList(Items.this,GroceryItems, imageId);
         list=(ListView)findViewById(R.id.list);
         list.setAdapter(adapter);
@@ -28,6 +27,8 @@ public class Items extends MainActivity {
         final Intent vege=new Intent(this,Vegetable.class);
         final Intent meat=new Intent(this,Meats.class);
         final Intent bakery=new Intent(this,BakeryItems.class);
+
+
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override

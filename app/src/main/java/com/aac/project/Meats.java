@@ -1,5 +1,6 @@
 package com.aac.project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -27,11 +28,20 @@ public class Meats extends Items {
                 ItemsList(Meats.this, MeatItems, imageId);
         list = (ListView) findViewById(R.id.list);
         list.setAdapter(adapter);
+
+        final Intent mutton=new Intent(this,Mutton.class);
+        final Intent chicken=new Intent(this,Chicken.class);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
+
+                if (MeatItems[position].equals("Chicken")){
+                    startActivity(chicken);}
+                if (MeatItems[position].equals("Mutton")){
+                    startActivity(mutton);
+                }
 
 
             }

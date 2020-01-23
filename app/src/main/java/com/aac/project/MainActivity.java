@@ -17,16 +17,18 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     ImageButton btn;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         btn=findViewById(R.id.imageButton2);
-        final Intent intent=new Intent(this,Items.class);
+        final Intent intent=new Intent(this,Customer.class);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 startActivity(intent);
             }
         });

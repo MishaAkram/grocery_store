@@ -13,26 +13,26 @@
         android:layout_width="154dp"
         android:layout_height="64dp"
         android:layout_marginBottom="176dp"
-        android:background="@drawable/image"
         android:backgroundTint="#FFC107"
         android:foregroundTint="#FF9800"
         android:text="Buy"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/image"/>
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="297dp"
-        android:layout_height="86dp"
+        android:layout_width="305dp"
+        android:layout_height="104dp"
         android:text="You can buy:1kg at a time if you want to select more press button multiple times"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -44,21 +44,6 @@
         android:background="@drawable/image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/banana" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="268dp"
-        android:layout_marginBottom="5dp"
-        android:text="Banana"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#FF5722"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/chicken" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

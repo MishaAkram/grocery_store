@@ -39,8 +39,6 @@ public class Fruits extends Items {
                     startActivity(apple);}
                 if (FruitsItems[position].equals("Banana")){
                     startActivity(banana);}
-
-
             }
         });
 

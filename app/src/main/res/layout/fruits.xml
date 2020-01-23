@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fruits"
-    android:background="@drawable/white">
+    android:background="@drawable/wooden">
 
     <ListView
         android:id="@+id/list"
